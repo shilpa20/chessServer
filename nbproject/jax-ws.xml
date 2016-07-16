@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="objKing">
+      <implementation-class>com.objKing</implementation-class>
+    </service>
+    <service name="objChessPieces">
+      <implementation-class>com.objChessPieces</implementation-class>
+    </service>
+    <service name="objBishop">
+      <implementation-class>com.objBishop</implementation-class>
+    </service>
+    <service name="objCellMatrix">
+      <implementation-class>com.objCellMatrix</implementation-class>
+    </service>
+    <service name="objKnight">
+      <implementation-class>com.objKnight</implementation-class>
+    </service>
+    <service name="objQueen">
+      <implementation-class>com.objQueen</implementation-class>
+    </service>
+    <service name="objRock">
+      <implementation-class>com.objRock</implementation-class>
+    </service>
+    <service name="objPawn">
+      <implementation-class>com.objPawn</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>
