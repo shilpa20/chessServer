@@ -19,8 +19,8 @@
     <service name="objQueen">
       <implementation-class>com.objQueen</implementation-class>
     </service>
-    <service name="objRock">
-      <implementation-class>com.objRock</implementation-class>
+    <service name="objRook">
+      <implementation-class>com.objRook</implementation-class>
     </service>
     <service name="objPawn">
       <implementation-class>com.objPawn</implementation-class>
