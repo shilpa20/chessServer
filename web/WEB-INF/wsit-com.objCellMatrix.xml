@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="objCellMatrix" targetNamespace="http://com/" xmlns:tns="http://com/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp1="http://www.w3.org/ns/ws-policy" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" 
+ >
+    <message name="objCellMatrix"/>
+    <message name="objCellMatrixResponse"/>
+    <message name="resetMatrix"/>
+    <message name="resetMatrixResponse"/>
+    <message name="getPlayerCell"/>
+    <message name="getPlayerCellResponse"/>
+    <message name="getPieceCell"/>
+    <message name="getPieceCellResponse"/>
+    <message name="setPlayerCell"/>
+    <message name="setPlayerCellResponse"/>
+    <message name="setPieceCell"/>
+    <message name="setPieceCellResponse"/>
+    <message name="getPlayerMatrix"/>
+    <message name="getPlayerMatrixResponse"/>
+    <message name="getPieceMatrix"/>
+    <message name="getPieceMatrixResponse"/>
+    <message name="checkWinner"/>
+    <message name="checkWinnerResponse"/>
+    <portType name="objCellMatrix">
+        <operation name="objCellMatrix">
+            <input message="tns:objCellMatrix"/>
+            <output message="tns:objCellMatrixResponse"/>
+        </operation>
+        <operation name="resetMatrix">
+            <input message="tns:resetMatrix"/>
+            <output message="tns:resetMatrixResponse"/>
+        </operation>
+        <operation name="getPlayerCell">
+            <input message="tns:getPlayerCell"/>
+            <output message="tns:getPlayerCellResponse"/>
+        </operation>
+        <operation name="getPieceCell">
+            <input message="tns:getPieceCell"/>
+            <output message="tns:getPieceCellResponse"/>
+        </operation>
+        <operation name="setPlayerCell">
+            <input message="tns:setPlayerCell"/>
+            <output message="tns:setPlayerCellResponse"/>
+        </operation>
+        <operation name="setPieceCell">
+            <input message="tns:setPieceCell"/>
+            <output message="tns:setPieceCellResponse"/>
+        </operation>
+        <operation name="getPlayerMatrix">
+            <input message="tns:getPlayerMatrix"/>
+            <output message="tns:getPlayerMatrixResponse"/>
+        </operation>
+        <operation name="getPieceMatrix">
+            <input message="tns:getPieceMatrix"/>
+            <output message="tns:getPieceMatrixResponse"/>
+        </operation>
+        <operation name="checkWinner">
+            <input message="tns:checkWinner"/>
+            <output message="tns:checkWinnerResponse"/>
+        </operation>
+    </portType>
+    <binding name="objCellMatrixPortBinding" type="tns:objCellMatrix">
+        <wsp:PolicyReference URI="#objCellMatrixPortBindingPolicy"/>
+        <operation name="objCellMatrix">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="resetMatrix">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getPlayerCell">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getPieceCell">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="setPlayerCell">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="setPieceCell">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getPlayerMatrix">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getPieceMatrix">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="checkWinner">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="objCellMatrix">
+        <port name="objCellMatrixPort" binding="tns:objCellMatrixPortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="objCellMatrixPortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <wsoma:OptimizedMimeSerialization/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

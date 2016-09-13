@@ -19,7 +19,7 @@ public class objChessPieces
     protected int finalDesRow = 0;
     protected int finalDesColumn = 0;
     protected String strErrorMsg = "";
-    protected int currentPlayer = 0;
+    
 	
     public objChessPieces ()
     {

@@ -23,8 +23,9 @@
       <implementation-class>com.objRook</implementation-class>
     </service>
     <service name="objPawn">
-      <implementation-class>com.objPawn</implementation-class>
+      <implementation-class>comm.objPawn</implementation-class>
     </service>
   </services>
   <clients/>
+  <jsr109>true</jsr109>
 </jax-ws>
